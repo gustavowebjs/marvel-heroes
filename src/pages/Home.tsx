@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Button } from '../components/common/button';
 import Loading from '../components/common/loading';
 import Filter from '../components/filter/Filter';
 import CharacterCard from '../components/Heroes/CharacterCard';
@@ -9,7 +8,7 @@ import { Container, CardList, Center } from './styles';
 const Home: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [characters, setCharacters] = useState<CharacterProps[]>([]);
-  const [params, setParams] = useState({
+  const [params] = useState({
     nameStartsWith: null,
     limit: 12,
     offset: '',
