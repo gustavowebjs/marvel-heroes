@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const Card = styled.div`
-  border: solid 1px #333;
   width: 100%;
-  min-width: 25%;
+  border-right: solid 5px transparent;
+  border-bottom: solid 5px transparent;
   text-align: center;
   &:hover {
-    border-right: solid 4px #ce1212;
-    border-bottom: solid 4px #ce1212;
+    border-right: solid 5px #810000;
+    border-bottom: solid 5px #810000;
   }
 `;
 export const HeaderList = styled.div`
@@ -23,5 +23,6 @@ export const Thumbnail = styled.img`
   background-size: cover;
   background-position: center;
   min-height: 250px;
+  background-color: #efefef;
   object-fit: cover;
 `;

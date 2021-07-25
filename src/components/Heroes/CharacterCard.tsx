@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { HeaderList, Thumbnail, Card } from './styles';
 
 interface CharacterProps {
@@ -22,9 +23,9 @@ const CharacterCard: React.FC<Props> = ({ character }) => {
         src={`${character.thumbnail?.path}.${character.thumbnail?.extension}`}
         alt={character.name}
       />
-      <a href="/">
+      <Link to={`/heroes/${character.id}`}>
         <HeaderList>{character.name}</HeaderList>
-      </a>
+      </Link>
     </Card>
   );
 };

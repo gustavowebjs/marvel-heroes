@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Wrapper } from './styles';
 import Logo from '../../assets/img/logo.png';
 
@@ -11,12 +12,12 @@ const Header: React.FC = () => {
           <p>Your Heroes catalogue</p>
         </div>
         <ul>
-          <a href="/">
+          <Link to="/">
             <li>Heroes</li>
-          </a>
-          <a href="/">
-            <li>Bio</li>
-          </a>
+          </Link>
+          <Link to="/comics">
+            <li>Comics</li>
+          </Link>
         </ul>
       </Wrapper>
     </Container>
