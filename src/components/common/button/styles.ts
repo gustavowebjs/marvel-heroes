@@ -12,7 +12,7 @@ export const StyledButton = styled.button<ButtonProps>`
   border-right: solid 5px #810000;
   border-bottom: solid 5px #810000;
   color: #fff;
-  padding: 0 32px;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -57,20 +57,48 @@ export const TitleSingle = styled.div`
 
 export const WrapperImage = styled.div`
   background-color: #ce1212;
-  min-height: 300px;
+  max-height: 300px;
   padding: 20px;
   border-radius: 10px;
 `;
+
 export const WrapperDetails = styled.div`
   min-height: 300px;
   width: auto;
   padding: 20px;
   border-radius: 20px;
   border: solid 1px #333;
+  > h4 {
+    margin: 0;
+    padding: 0;
+  }
+  > p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  > ul {
+    padding: 0;
+  }
+  > ul li img {
+    height: 80px;
+    width: 80px !important;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+  > ul li {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const SingPageRow = styled.div`
   display: grid;
+  margin-bottom: 150px;
   grid-gap: 20px;
   grid-template-columns: 0.3fr 0.7fr;
   @media (max-width: 800px) {
@@ -81,5 +109,34 @@ export const SingPageRow = styled.div`
     margin: 10px;
 
     grid-template-columns: 1fr;
+  }
+`;
+
+export const GroupButton = styled.div`
+  display: flex;
+  align-items: center;
+`;
+export const ButtonTab = styled.button`
+  margin-left: 5px;
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-weight: 500;
+  border-radius: 5px;
+  border: solid 2px #810000;
+  background: transparent;
+  color: #fff;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: filter 0.2;
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
   }
 `;

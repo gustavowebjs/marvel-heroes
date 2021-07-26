@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { RouteComponentProps } from 'react-router-dom';
+import { Link, RouteComponentProps } from 'react-router-dom';
+import KeyboardReturnOutlinedIcon from '@material-ui/icons/KeyboardReturnOutlined';
+import { Button } from '../../components/common/button';
 import Loading from '../../components/common/loading';
+import FeaturedSeries from '../../components/Heroes/FeaturedSeries';
 import api from '../../services/api';
+import { CharacterProps, SeriesProp, ComicsProp } from '../../types';
 import {
   Container,
   WrapperImage,
@@ -10,7 +14,10 @@ import {
   Center,
   SingPageRow,
   WrapperDetails,
+  GroupButton,
+  ButtonTab,
 } from './styles';
+import FeaturedComics from '../../components/Heroes/FeaturedComics';
 
 interface RouteParams {
   id: string;
@@ -19,15 +26,10 @@ interface RouteParams {
 type RouteParamsProp = RouteComponentProps<RouteParams>;
 
 const HeroSingle: React.FC<RouteParamsProp> = (props) => {
-  type CharacterProps = {
-    id: number;
-    name: string;
-    description: string;
-    thumbnail: {
-      extension: string;
-      path: string;
-    };
-  };
+  const [loading, setLoading] = useState<boolean>(false);
+  const [tabView, setTabView] = useState<string>('series');
+  const [comics, setComics] = useState<ComicsProp[]>([]);
+  const [series, setSeries] = useState<SeriesProp[]>([]);
 
   const [character, setCharacter] = useState<CharacterProps>({
     id: 0,
@@ -38,7 +40,6 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
       path: '',
     },
   });
-  const [loading, setLoading] = useState<boolean>(false);
 
   // eslint-disable-next-line react/destructuring-assignment
   const { id } = props.match.params;
@@ -49,10 +50,18 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
       try {
         setLoading(true);
         const { data } = await api.get(`/characters/${id}`);
+        const { data: seriesData } = await api.get(`/characters/${id}/series`, {
+          params: { limit: 5 },
+        });
+        const { data: comicsData } = await api.get(`/characters/${id}/comics`, {
+          params: { limit: 5 },
+        });
 
         setCharacter(data.data.results[0]);
+        setSeries(seriesData.data.results);
+        setComics(comicsData.data.results);
       } catch (error) {
-        throw new Error(`Error:${error}`);
+        console.log(error);
       } finally {
         setLoading(false);
       }
@@ -60,10 +69,6 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
 
     fetchSingleCharacter();
   }, [id]);
-
-  useEffect(() => {
-    console.log(character);
-  }, [character]);
 
   return (
     <Container>
@@ -80,10 +85,28 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
               }}
             />
             <TitleSingle>{character.name}</TitleSingle>
+            <br /> <br />
+            <Center>
+              <Link to="/">
+                <Button>
+                  <KeyboardReturnOutlinedIcon />
+                  Return
+                </Button>
+              </Link>
+            </Center>
           </WrapperImage>
 
           <WrapperDetails>
-            <p>Text details</p>
+            <GroupButton>
+              <ButtonTab onClick={() => setTabView('series')}>Series</ButtonTab>
+              <ButtonTab onClick={() => setTabView('comics')}>Comics</ButtonTab>
+            </GroupButton>
+
+            {tabView === 'series' ? (
+              <FeaturedSeries character={character.name} series={series} />
+            ) : (
+              <FeaturedComics character={character.name} comics={comics} />
+            )}
           </WrapperDetails>
         </SingPageRow>
       )}
