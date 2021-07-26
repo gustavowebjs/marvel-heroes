@@ -92,6 +92,3 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
 };
 
 export default HeroSingle;
-function useCallback(arg0: () => Promise<void>, arg1: string[]): Promise<void> {
-  throw new Error('Function not implemented.');
-}
