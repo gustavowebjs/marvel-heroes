@@ -34,7 +34,7 @@
         "import/prefer-default-export": "off",
         "no-console":"off",
         "@typescript-eslint/explicit-function-return-type": [
-          "off",
+          "error",
           {
             "allowExpressions": true
           }

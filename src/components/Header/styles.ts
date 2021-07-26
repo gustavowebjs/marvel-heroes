@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 50px;
   align-items: center;
   justify-content: center;
   & div p {
@@ -17,20 +17,22 @@ export const Wrapper = styled.div`
     font-weight: 300;
     text-align: center;
   }
-  & ul {
+  > ul {
+    padding-left: 0;
     border-top: solid 1px #810000;
     display: flex;
-    width: auto;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
-  & ul a {
+  > ul a {
+    margin: 10px;
     color: #eeebdd;
     text-decoration: none;
     display: block;
-    padding: 15px 35px;
+    padding: 5px 30px;
     font-size: 20px;
     border: solid 3px #eeebdd;
-    margin: 20px;
+    margin-top: 10px;
     &:hover {
       border-color: #810000;
     }

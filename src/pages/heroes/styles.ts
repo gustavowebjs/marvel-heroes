@@ -7,6 +7,7 @@ export const Container = styled.div`
 
 export const CardList = styled.div`
   display: grid;
+  justify-content: center;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 10px;
@@ -38,4 +39,47 @@ export const Total = styled.span`
   color: #666;
   font-weight: 300;
   margin-left: 10px;
+`;
+
+export const ImageSingle = styled.div`
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 10px;
+`;
+export const TitleSingle = styled.div`
+  font-weight: 700;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+`;
+
+export const WrapperImage = styled.div`
+  background-color: #ce1212;
+  min-height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+`;
+export const WrapperDetails = styled.div`
+  min-height: 300px;
+  width: auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 1px #333;
+`;
+
+export const SingPageRow = styled.div`
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 0.3fr 0.7fr;
+  @media (max-width: 800px) {
+    grid-template-columns: 0.5fr 0.5fr;
+    margin: 10px;
+  }
+  @media (max-width: 500px) {
+    margin: 10px;
+
+    grid-template-columns: 1fr;
+  }
 `;

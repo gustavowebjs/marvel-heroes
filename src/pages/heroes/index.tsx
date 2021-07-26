@@ -38,7 +38,7 @@ const Home: React.FC = () => {
     };
   };
 
-  async function handleMore() {
+  async function handleMore(): Promise<void> {
     try {
       setLoadMore(true);
       const { data } = await api.get('/characters', {
