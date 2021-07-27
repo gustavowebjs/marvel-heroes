@@ -17,13 +17,11 @@ The Heroes Catalogue project Provides the Features bellow:
 
 <p>✅  Heroes List; </p>
 
-<p>✅  Series Featured by Heroe;</p>
+<p>✅  Featured Heroes Series;</p>
 
-<p>✅  Comics Featured by Heroe;</p>
+<p>✅  Featured Heroes Comics;</p>
 
 <p>✅  Series List;</p>
-
-<p>✅  Characters Featured by Series;</p>
 
 <p>✅  Search for Heroes;</p>
 
