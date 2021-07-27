@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ExitToAppOutlinedIcon from '@material-ui/icons/ExitToAppOutlined';
 import { SeriesProp } from '../../types';
 
 type Props = {
@@ -19,7 +21,17 @@ const FeaturedSeries: React.FC<Props> = ({ series, character }) => {
               alt={serie.title}
               src={`${serie.thumbnail.path}.${serie.thumbnail.extension}`}
             />
-            {serie.title}
+            <div>
+              {serie.title}
+              <div>
+                <Link style={{ color: '#666' }} to={`/series/${serie.id}`}>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <ExitToAppOutlinedIcon />
+                    See more
+                  </div>
+                </Link>
+              </div>
+            </div>
           </li>
         ))}
       </ul>
