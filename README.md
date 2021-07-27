@@ -1,34 +1,95 @@
-# Teste técnico
+<p align="center">
+ <img height="80" alt="Heroes" src="/src/assets/img/logo.png">
+</p>
 
-Como parte do processo seletivo da Startec Jobs, utilizamos esse desafio técnico para avaliar seus conhecimento técnicos e habilidades com o requisito da vaga, lembrando apenas, que claro, o teste deve ser feito por você e apenas você, no conforto de seu lar!
+<p align="center">
 
-## Descrição do desafio
+![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)  ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
 
-O desafio consiste em criar uma aplicação client-side escalável, utilizando a biblioteca React, que faça consultas e consuma uma API externa, nesse cenário, sendo da Marvel, seguindo as diretrizes mencionadas logo abaixo e o protótipo desenvolvido especialmente para esse desafio. Utilize sua criatividade para compor as telas e as funcionalidades. Lembre-se de utilizar componentes. Mínimo de 4 telas
+</p>
 
-### API Marvel
+<hr>
+<h2>Your Heroes Catalogue</h2>
+
+## :gear: Features
+
+The Heroes Catalogue project Provides the Features bellow:
+
+<p>✅  Heroes List; </p>
+
+<p>✅  Series Featured by Heroe;</p>
+
+<p>✅  Comics Featured by Heroe;</p>
+
+<p>✅  Series List;</p>
+
+<p>✅  Characters Featured by Series;</p>
+
+<p>✅  Search for Heroes;</p>
+
+<p>✅  Search for Series;</p>
+
+## :globe_with_meridians: Demo
+
+You can view a demo **[Right Here](https://heroes-nine.vercel.app/)**.
+
+Vercel **https://vercel.com/**.
+
+
+## :rocket: Technologies
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Material Icons](https://material-ui.com/pt/components/material-icons/)
+- [ESLint](https://eslint.org/)
+- [React Testing Library](https://testing-library.com/)
+
+## :camera_flash: Screens
+
+### :zap: Heroes Pages
+
+<p align="center">
+ <img width="600" alt="Heroes List" src="/src/assets/screens/heroes.png">
+</p>
+<hr>
+<p align="center">
+ <img width="600" alt="Heroes" src="/src/assets/screens/singlehero.png">
+</p>
+
+### :zap: Series Pages
+
+<p align="center">
+ <img width="600" alt="Series List" src="/src/assets/screens/series.png">
+</p>
+<hr>
+<p align="center">
+ <img width="600" alt="Series" src="/src/assets/screens/singleserie.png">
+</p>
+
+
+## :zap: Usage
+
+```bash
+# install all dependencies
+$ yarn
+
+# run react on localhost:3000 
+$ yarn start
+
+# to run tests
+$ yarn test
+
+# run the follow codes for production
+$ yarn build
+$ yarn start
+
 
 ```
-https://developer.marvel.com
-``` 
 
-### Requisitos
-A sua aplicação deve atender os seguintes requisitos.
+## :page_facing_up: License
 
-- ReactJS
-- Typescript
-- Styled Components
-- Lint
-- Testes
-- Arquitetura desacoplada para implementação da API
-- Readme organizado 
-
-#### Diferencial
-
-- Deploy via Github para algum provider (AWS, GCP, Microsoft Azure)
-- Utilização do conceito hexagonal
-
-#### Entrega
-
-- Faça um PR para este repositório com sua solução. Até a data informada.
-- Seu repositório deve estar sendo utilizado com o padrão Gitflow
+[MIT License](LICENSE.md)
+All Rights Reserved
+[Gustavo Vinicius](https://github.com/gustavowebjs)
