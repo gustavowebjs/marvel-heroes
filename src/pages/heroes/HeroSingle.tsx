@@ -18,7 +18,7 @@ import {
 import FeaturedComics from '../../components/Heroes/FeaturedComics';
 
 interface RouteParams {
-  id: string;
+  id?: string;
 }
 
 type RouteParamsProp = RouteComponentProps<RouteParams>;
