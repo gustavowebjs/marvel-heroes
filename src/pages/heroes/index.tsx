@@ -87,7 +87,7 @@ const Home: React.FC = () => {
       <Form onSubmit={handleFilter}>
         <Input
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search from characters"
+          placeholder="Search for characters"
         />
 
         <Button>

@@ -79,7 +79,7 @@ const Series: React.FC = () => {
       <Form onSubmit={handleFilter}>
         <Input
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Search from Series"
+          placeholder="Search for Series"
         />
 
         <Button>
