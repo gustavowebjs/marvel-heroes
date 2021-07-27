@@ -1,10 +1,12 @@
-<p>
+<p align="center">
  <img height="80" alt="Heroes" src="/src/assets/img/logo.png">
 </p>
 
+<p align="center">
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)  ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
 
+</p>
 
 <hr>
 <h2>Your Heroes Catalogue</h2>
@@ -39,22 +41,22 @@ Vercel **https://vercel.com/**.
 
 ### :zap: Heroes Pages
 
-<p>
- <img width="500" alt="Heroes List" src="/src/assets/screens/heroes.png">
+<p align="center">
+ <img width="600" alt="Heroes List" src="/src/assets/screens/heroes.png">
 </p>
 <hr>
-<p >
- <img width="500" alt="Heroes" src="/src/assets/screens/singlehero.png">
+<p align="center">
+ <img width="600" alt="Heroes" src="/src/assets/screens/singlehero.png">
 </p>
 
 ### :zap: Series Pages
 
-<p >
- <img width="500" alt="Series List" src="/src/assets/screens/series.png">
+<p align="center">
+ <img width="600" alt="Series List" src="/src/assets/screens/series.png">
 </p>
 <hr>
-<p >
- <img width="500" alt="Series" src="/src/assets/screens/singleserie.png">
+<p align="center">
+ <img width="600" alt="Series" src="/src/assets/screens/singleserie.png">
 </p>
 
 
