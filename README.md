@@ -10,20 +10,29 @@
 
 <hr>
 <h2>Your Heroes Catalogue</h2>
+
 ## :gear: Features
 
 The Heroes Catalogue project Provides the Features bellow:
-<p>:check_mark_button: Heroes List;</p>
-<p>:check_mark_button: Series Featured by Heroe;</p>
-<p>:check_mark_button: Comics Featured by Heroe;</p>
-<p>:check_mark_button: Series List;</p>
-<p>:check_mark_button: Characters Featured by Series;</p>
-<p>:check_mark_button: Search for Heroes;</p>
-<p>:check_mark_button: Search for Series;</p>
+
+<p>✅ Heroes List; </p>
+
+<p>✅ Series Featured by Heroe;</p>
+
+<p>✅ Comics Featured by Heroe;</p>
+
+<p>✅ Series List;</p>
+
+<p>✅ Characters Featured by Series;</p>
+
+<p>✅ Search for Heroes;</p>
+
+<p>✅ Search for Series;</p>
 
 ## :globe_with_meridians: Demo
 
 You can view a demo **[Right Here](https://app-marvel-heroes.netlify.app/)**.
+
 Vercel **https://vercel.com/**.
 
 
