@@ -96,7 +96,7 @@ const Home: React.FC = () => {
         </Button>
       </Form>
       <Total>
-        Found: <strong>{total}</strong> results
+        Found: <strong>{total}</strong> results.
       </Total>
 
       {loading ? (
