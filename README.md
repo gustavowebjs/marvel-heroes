@@ -92,5 +92,5 @@ $ yarn start
 
 [MIT License](LICENSE.md)
 All Rights Reserved
-[Gustavo Vinicius](https://github/gustavowebjs)
+[Gustavo Vinicius](https://github.com/gustavowebjs)
 
