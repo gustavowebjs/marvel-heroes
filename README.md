@@ -1,46 +1,85 @@
-# Getting Started with Create React App
+<p>
+ <img height="80" alt="Heroes" src="/src/assets/img/logo.png">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)  ![Vercel](http://therealsujitk-vercel-badge.vercel.app/?app=therealsujitk-vercel-badge)
 
-In the project directory, you can run:
 
-### `yarn start`
+<hr>
+<h2>Your Heroes Catalogue</h2>
+## :gear: Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Heroes Catalogue project Provides the Features bellow:
+<p>:check_mark_button: Heroes List;</p>
+<p>:check_mark_button: Series Featured by Heroe;</p>
+<p>:check_mark_button: Comics Featured by Heroe;</p>
+<p>:check_mark_button: Series List;</p>
+<p>:check_mark_button: Characters Featured by Series;</p>
+<p>:check_mark_button: Search for Heroes;</p>
+<p>:check_mark_button: Search for Series;</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :globe_with_meridians: Demo
 
-### `yarn test`
+You can view a demo **[Right Here](https://app-marvel-heroes.netlify.app/)**.
+Vercel **https://vercel.com/**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## :rocket: Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://reactjs.org/)
+- [Styled-Components](https://styled-components.com/)
+- [Axios](https://github.com/axios/axios)
+- [Material Icons](https://material-ui.com/pt/components/material-icons/)
+- [ESLint](https://eslint.org/)
+- [React Testing Library](https://testing-library.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :camera_flash: Screens
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### :zap: Heroes Pages
 
-### `yarn eject`
+<p>
+ <img width="500" alt="Heroes List" src="/src/assets/screens/heroes.png">
+</p>
+<hr>
+<p >
+ <img width="500" alt="Heroes" src="/src/assets/screens/singlehero.png">
+</p>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### :zap: Series Pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<p >
+ <img width="500" alt="Series List" src="/src/assets/screens/series.png">
+</p>
+<hr>
+<p >
+ <img width="500" alt="Series" src="/src/assets/screens/singleserie.png">
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## :zap: Usage
 
-## Learn More
+```bash
+# install all dependencies
+$ yarn
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# run react on localhost:3000 
+$ yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# to run tests
+$ yarn test
+
+# run the follow codes for production
+$ yarn build
+$ yarn start
+
+
+```
+
+## :page_facing_up: License
+
+[MIT License](LICENSE.md)
+All Rights Reserved
+[Gustavo Vinicius](https://github/gustavowebjs)
+
