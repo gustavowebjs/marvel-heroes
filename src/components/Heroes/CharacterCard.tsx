@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { HeaderList, Thumbnail, Card } from './styles';
+import { Link, useHistory } from 'react-router-dom';
+import { HeaderList, Thumbnail, Card, ContentCard } from './styles';
 
 interface CharacterProps {
   id: number;
@@ -17,15 +17,20 @@ interface Props {
 }
 
 const CharacterCard: React.FC<Props> = ({ character }) => {
+  const history = useHistory();
+
   return (
-    <Card>
-      <Thumbnail
-        src={`${character.thumbnail?.path}.${character.thumbnail?.extension}`}
-        alt={character.name}
-      />
-      <Link to={`/heroes/${character.id}`}>
-        <HeaderList>{character.name}</HeaderList>
-      </Link>
+    <Card onClick={() => history.push(`/heroes/${character.id}`)}>
+      <ContentCard>
+        <Thumbnail
+          style={{
+            backgroundImage: `url(${character.thumbnail?.path}.${character.thumbnail?.extension})`,
+          }}
+        />
+        <Link to={`/heroes/${character.id}`}>
+          <HeaderList>{character.name}</HeaderList>
+        </Link>
+      </ContentCard>
     </Card>
   );
 };

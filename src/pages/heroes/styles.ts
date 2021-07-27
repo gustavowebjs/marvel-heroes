@@ -60,6 +60,12 @@ export const WrapperImage = styled.div`
   max-height: 300px;
   padding: 20px;
   border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+  @media (max-width: 500px) {
+    height: 500px;
+  }
 `;
 
 export const WrapperDetails = styled.div`

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, RouteComponentProps } from 'react-router-dom';
-import KeyboardReturnOutlinedIcon from '@material-ui/icons/KeyboardReturnOutlined';
-import { Button } from '../../components/common/button';
+import { RouteComponentProps } from 'react-router-dom';
 import Loading from '../../components/common/loading';
 import FeaturedSeries from '../../components/Heroes/FeaturedSeries';
 import api from '../../services/api';
@@ -85,15 +83,6 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
               }}
             />
             <TitleSingle>{character.name}</TitleSingle>
-            <br /> <br />
-            <Center>
-              <Link to="/">
-                <Button>
-                  <KeyboardReturnOutlinedIcon />
-                  Return
-                </Button>
-              </Link>
-            </Center>
           </WrapperImage>
 
           <WrapperDetails>
