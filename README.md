@@ -15,23 +15,23 @@
 
 The Heroes Catalogue project Provides the Features bellow:
 
-<p>✅ Heroes List; </p>
+<p>✅  Heroes List; </p>
 
-<p>✅ Series Featured by Heroe;</p>
+<p>✅  Series Featured by Heroe;</p>
 
-<p>✅ Comics Featured by Heroe;</p>
+<p>✅  Comics Featured by Heroe;</p>
 
-<p>✅ Series List;</p>
+<p>✅  Series List;</p>
 
-<p>✅ Characters Featured by Series;</p>
+<p>✅  Characters Featured by Series;</p>
 
-<p>✅ Search for Heroes;</p>
+<p>✅  Search for Heroes;</p>
 
-<p>✅ Search for Series;</p>
+<p>✅  Search for Series;</p>
 
 ## :globe_with_meridians: Demo
 
-You can view a demo **[Right Here](https://app-marvel-heroes.netlify.app/)**.
+You can view a demo **[Right Here](https://heroes-nine.vercel.app/)**.
 
 Vercel **https://vercel.com/**.
 
