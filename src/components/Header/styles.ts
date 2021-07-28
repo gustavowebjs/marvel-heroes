@@ -25,6 +25,7 @@ export const Wrapper = styled.div`
     align-items: center;
   }
   > ul a {
+    border-radius: 5px;
     margin: 10px;
     color: #eeebdd;
     text-decoration: none;
