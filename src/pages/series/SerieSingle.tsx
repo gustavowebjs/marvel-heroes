@@ -72,14 +72,16 @@ const SerieSingle: React.FC<RouteParamsProp> = (props) => {
         </Center>
       ) : (
         <SingPageRow>
-          <WrapperImage>
-            <ImageSingle
-              style={{
-                backgroundImage: `url(${serie.thumbnail?.path}.${serie.thumbnail?.extension})`,
-              }}
-            />
-            <TitleSingle>{serie.title}</TitleSingle>
-          </WrapperImage>
+          <div>
+            <WrapperImage>
+              <ImageSingle
+                style={{
+                  backgroundImage: `url(${serie.thumbnail?.path}.${serie.thumbnail?.extension})`,
+                }}
+              />
+              <TitleSingle>{serie.title}</TitleSingle>
+            </WrapperImage>
+          </div>
 
           <WrapperDetails>
             <GroupButton>
