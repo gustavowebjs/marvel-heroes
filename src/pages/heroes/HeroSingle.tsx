@@ -76,14 +76,16 @@ const HeroSingle: React.FC<RouteParamsProp> = (props) => {
         </Center>
       ) : (
         <SingPageRow>
-          <WrapperImage>
-            <ImageSingle
-              style={{
-                backgroundImage: `url(${character.thumbnail?.path}.${character.thumbnail?.extension})`,
-              }}
-            />
-            <TitleSingle>{character.name}</TitleSingle>
-          </WrapperImage>
+          <div>
+            <WrapperImage>
+              <ImageSingle
+                style={{
+                  backgroundImage: `url(${character.thumbnail?.path}.${character.thumbnail?.extension})`,
+                }}
+              />
+              <TitleSingle>{character.name}</TitleSingle>
+            </WrapperImage>
+          </div>
 
           <WrapperDetails>
             <GroupButton>

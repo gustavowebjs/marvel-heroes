@@ -43,7 +43,7 @@ export const Total = styled.span`
 
 export const ImageSingle = styled.div`
   width: 100%;
-  height: 80%;
+  min-height: 250px;
   background-color: #fff;
   background-size: cover;
   border-radius: 10px;
@@ -57,15 +57,11 @@ export const TitleSingle = styled.div`
 
 export const WrapperImage = styled.div`
   background-color: #ce1212;
-  max-height: 300px;
   padding: 20px;
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.6);
-  @media (max-width: 500px) {
-    height: 500px;
-  }
 `;
 
 export const WrapperDetails = styled.div`
